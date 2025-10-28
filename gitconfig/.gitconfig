@@ -4,3 +4,5 @@
 [user]
 	name = André Ljungsvik
 	email = 140394392+andreljungsvik@users.noreply.github.com
+[credential]
+	helper = store
