@@ -127,10 +127,10 @@ colors = [
 def C(x): return x[0] if isinstance(x, (list, tuple)) else x
 
 layout_theme = {
-    "border_width" : 0,
+    "border_width" : 1,
     "margin" : 0,
     "border_focus" : colors[4],
-    "border_normal" : colors[4],
+    "border_normal" : colors[2],
 }
 
 layouts = [
