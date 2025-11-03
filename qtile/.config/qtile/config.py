@@ -110,12 +110,12 @@ for i in groups:
     )
 
 colors = [
-    ["#2d2a2e", "#2d2a2e"],  # bg        (primary.background)
-    ["#fff1f3", "#fff1f3"],  # fg        (primary.foreground)
+    ["#1d2021", "#1d2021"],  # bg        (primary.background)
+    ["#d4be98", "#d4be98"],  # fg        (primary.foreground)
     ["#2c2525", "#2c2525"],  # color01   (normal.black)
     ["#fd6883", "#fd6883"],  # color02   (normal.red)
-    ["#adda78", "#adda78"],  # color03   (normal.green)
-    ["#f9cc6c", "#f9cc6c"],  # color04   (normal.yellow)
+    ["#a9b665", "#a9b665"],  # color03   (normal.green)
+    ["#d8a657", "#d8a657"],  # color04   (normal.yellow)
     ["#f38d70", "#f38d70"],  # color05   (normal.blue)
     ["#a8a9eb", "#a8a9eb"],  # color06   (normal.magenta)
     ["#85dacc", "#85dacc"],  # color15   (bright.cyan)
@@ -211,6 +211,26 @@ screens = [
                 ),
 		widget.Spacer(length=bar.STRETCH),
                 widget.Systray(padding = 6),
+		# widget.Battery(
+                #     foreground=colors[4],           # pick a palette slot you like
+                #     padding=8,
+                #     update_interval=5,
+                #     format='{percent:2.0%} {char} {hour:d}:{min:02d}',  # e.g. "73% ⚡ 1:45"
+                #     fmt='Bat: {}',
+                #     charge_char='',               # shown while charging
+                #     discharge_char='',            # Nerd icon; use '-' if you prefer plain ascii
+                #     full_char='✔',                 # when at/near 100%
+                #     unknown_char='?',
+                #     empty_char='!', 
+                #     mouse_callbacks={
+                #         'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e upower -i $(upower -e | grep BAT)'),
+                #     },
+                # ),
+                widget.Volume(
+                    foreground = colors[4],
+                    padding = 8, 
+                    fmt = 'Vol: {}',
+                ),
                 widget.Clock(
                     foreground = colors[4],
                     padding = 8, 
