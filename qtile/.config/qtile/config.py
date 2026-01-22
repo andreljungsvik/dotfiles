@@ -58,12 +58,7 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "d", lazy.spawn("rofi -show drun -show-icons"), desc='Run Launcher'),
     Key([mod], "b", lazy.spawn("librewolf"), desc='browser'),
-    Key(
-        ["control"], 
-        "F12",
-        lazy.spawn('sh -c "maim -s | xclip -selection clipboard -t image/png -i"'),
-        desc="Screenshot"
-    ),
+    Key([mod], "a", lazy.spawn("flameshot gui"), desc="Screenshot"),
     Key([], "XF86AudioPlay", lazy.spawn("playerctl play-pause"), desc="Play/Pause player"),
     Key([], "XF86AudioNext", lazy.spawn("playerctl next"), desc="Skip to next"),
     Key([], "XF86AudioPrev", lazy.spawn("playerctl previous"), desc="Skip to previous"),
@@ -150,9 +145,9 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="JetBrainsMono Nerd Font Propo Bold",
+    font="Terminus",
     # font="Ubuntu Bold",
-    fontsize=14,
+    fontsize=16,
     padding=0,
     background=colors[0],
 )
@@ -175,12 +170,12 @@ screens = [
                     foreground = colors[1]
                 ),
                 widget.GroupBox(
-                    fontsize = 16,
+                    fontsize = 18,
                     margin_y = 5,
                     margin_x = 5,
                     padding_y = 0,
                     padding_x = 2,
-                    borderwidth = 3,
+                    borderwidth = 1,
                     active = colors[4],
                     inactive = colors[9],
                     rounded = False,
@@ -190,17 +185,6 @@ screens = [
                     this_screen_border = colors [5],
                     other_current_screen_border = colors[4],
                     other_screen_border = colors[5],
-                ),
-                widget.TextBox(
-                    text = '|',
-                    font = "JetBrainsMono Nerd Font Propo Bold",
-                    foreground = colors[9],
-                    padding = 2,
-                    fontsize = 14
-                ),
-                widget.CurrentLayout(
-                    foreground = colors[9],
-                    padding = 5
                 ),
                 widget.TextBox(
                     text = '',
@@ -226,14 +210,9 @@ screens = [
                 #         'Button1': lambda: qtile.cmd_spawn(myTerm + ' -e upower -i $(upower -e | grep BAT)'),
                 #     },
                 # ),
-                widget.Volume(
-                    foreground = colors[4],
-                    padding = 8, 
-                    fmt = 'Vol: {}',
-                ),
                 widget.Clock(
                     foreground = colors[4],
-                    padding = 8, 
+                    padding = 8,
                     mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('notify-date')},
                     ## Uncomment for date and time 
                     format = "%a, %b %d - %H:%M",
@@ -245,7 +224,7 @@ screens = [
             # 24,
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"],  # Borders are magenta
-            margin=[0, 0, 1, 0], 
+            margin=[0, 0, 0, 0],  
             size=30
         ),
     ),
@@ -266,7 +245,7 @@ screens = [
                     margin_x = 5,
                     padding_y = 0,
                     padding_x = 2,
-                    borderwidth = 3,
+                    borderwidth = 1,
                     active = colors[4],
                     inactive = colors[9],
                     rounded = False,
@@ -276,17 +255,6 @@ screens = [
                     this_screen_border = colors [5],
                     other_current_screen_border = colors[4],
                     other_screen_border = colors[5],
-                ),
-                widget.TextBox(
-                    text = '|',
-                    font = "JetBrainsMono Nerd Font Propo Bold",
-                    foreground = colors[9],
-                    padding = 2,
-                    fontsize = 14
-                ),
-                widget.CurrentLayout(
-                    foreground = colors[9],
-                    padding = 5
                 ),
                 widget.TextBox(
                     text = '',
@@ -310,7 +278,7 @@ screens = [
             # 24,
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"],  # Borders are magenta
-            margin=[0, 0, 1, 0], 
+            margin=[0, 0, 0, 0], 
             size=30
         ),
     ),

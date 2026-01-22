@@ -4,25 +4,25 @@ import = [
 ]
 
 [window]
-opacity = 0.9
+opacity = 0.92
 padding.x = 10
 padding.y = 10
 
 [font]
-size = 15.0
+size = 16.0
+
+[font.normal]
+family = "Terminus"
+style = "Normal"
 
 [font.bold]
-family = "JetBrainsMono Nerd Font"
+family = "Terminus"
 style = "Heavy"
 
 [font.bold_italic]
-family = "JetBrainsMono Nerd Font"
+family = "Terminus"
 style = "Heavy Italic"
 
 [font.italic]
-family = "JetBrainsMono Nerd Font"
+family = "Terminus"
 style = "Medium Italic"
-
-[font.normal]
-family = "JetBrainsMono Nerd Font"
-style = "Medium"
