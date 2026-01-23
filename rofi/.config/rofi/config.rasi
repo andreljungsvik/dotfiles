@@ -1,3 +1,7 @@
 @import "/usr/share/rofi/themes/solarized_alternate.rasi"
 
-@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+//@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+
+//@theme "/usr/share/rofi/themes/Adapta-Nokto.rasi"
+
+@theme "/usr/share/rofi/themes/dmenu.rasi"

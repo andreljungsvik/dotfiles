@@ -1,7 +1,10 @@
 [general]
-import = [
-    "~/.config/alacritty/themes/themes/monokai_pro.toml"
-]
+#import = [
+#    "~/.config/alacritty/themes/themes/monokai_pro.toml"
+#]
+
+[colors.primary]
+background = '#000000'
 
 [window]
 opacity = 0.92
@@ -9,20 +12,20 @@ padding.x = 10
 padding.y = 10
 
 [font]
-size = 16.0
+size = 22.0
 
 [font.normal]
 family = "Terminus"
-style = "Normal"
+style = "Regular"
 
 [font.bold]
 family = "Terminus"
-style = "Heavy"
+style = "Bold"
 
 [font.bold_italic]
 family = "Terminus"
-style = "Heavy Italic"
+style = "Bold Italic"
 
 [font.italic]
 family = "Terminus"
-style = "Medium Italic"
+style = "Italic"

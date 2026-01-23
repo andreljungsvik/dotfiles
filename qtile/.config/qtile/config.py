@@ -105,7 +105,7 @@ for i in groups:
     )
 
 colors = [
-    ["#1d2021", "#1d2021"],  # bg        (primary.background)
+    ["#000000", "#000000"],  # bg        (primary.background)
     ["#d4be98", "#d4be98"],  # fg        (primary.foreground)
     ["#2c2525", "#2c2525"],  # color01   (normal.black)
     ["#fd6883", "#fd6883"],  # color02   (normal.red)
@@ -146,7 +146,6 @@ layouts = [
 
 widget_defaults = dict(
     font="Terminus",
-    # font="Ubuntu Bold",
     fontsize=16,
     padding=0,
     background=colors[0],
@@ -170,7 +169,7 @@ screens = [
                     foreground = colors[1]
                 ),
                 widget.GroupBox(
-                    fontsize = 18,
+                    fontsize = 14,
                     margin_y = 5,
                     margin_x = 5,
                     padding_y = 0,
@@ -240,7 +239,7 @@ screens = [
                     foreground = colors[1]
                 ),
                 widget.GroupBox(
-                    fontsize = 16,
+                    fontsize = 14,
                     margin_y = 5,
                     margin_x = 5,
                     padding_y = 0,
