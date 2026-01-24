@@ -8,11 +8,11 @@ background = '#000000'
 
 [window]
 opacity = 0.92
-padding.x = 10
-padding.y = 10
+padding.x = 25
+padding.y = 25
 
 [font]
-size = 22.0
+size = 16.0
 
 [font.normal]
 family = "Terminus"
