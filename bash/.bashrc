@@ -5,14 +5,15 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-EDITOR=nvim
-VISUAL=nvim
+export EDITOR=nvim
+export VISUAL=nvim
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias la='ls -la'
 alias vi='nvim'
 alias vim='nvim'
+alias sudo='sudo '
 
 PROMPT_COMMAND='
 branch=$(git branch --show-current 2>/dev/null)
