@@ -9,8 +9,9 @@ export EDITOR=nvim
 export VISUAL=nvim
 
 alias ls='ls --color=auto'
-alias grep='grep --color=auto'
 alias la='ls -la'
+alias ll='ls -ll'
+alias grep='grep --color=auto'
 alias vi='nvim'
 alias vim='nvim'
 alias sudo='sudo '
