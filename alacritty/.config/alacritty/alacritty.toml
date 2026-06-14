@@ -3,6 +3,12 @@
 #    "~/.config/alacritty/themes/themes/monokai_pro.toml"
 #]
 
+[cursor]
+blink_interval = 700
+[cursor.style]
+shape = "Block"
+blinking = "Always"
+
 [colors.primary]
 background = '#000000'
 
@@ -12,7 +18,7 @@ padding.x = 25
 padding.y = 25
 
 [font]
-size = 16.0
+size = 18.0
 
 [font.normal]
 family = "Terminus"
